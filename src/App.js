@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Simpsons from "./components/simpsons/Simpsons";
+import Characters from "./components/rick_and_morty/characters/Characters";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (<div>
+            <div>
+                {/*1. Описати всю сім'ю сімпсонів (5 персонажів)*/}
+                <h1 className="task">Task1</h1>
+                <div>
+                        <Simpsons/>
+                </div>
+            </div>
+            <div>
+                {/*2. Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі*/}
+                {/*https://rickandmortyapi.com/*/}
+                {/*https://rickandmortyapi.com/api/character*/}
+                {/*Створити 6 персонажів*/}
+                <h1 className="task">Task2</h1>
+                <Characters/>
+            </div>
+        </div>
+    );
 }
 
 export default App;
