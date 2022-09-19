@@ -1,0 +1,21 @@
+.wrap_posts{
+    background: grey;
+}
+.title_posts{
+    text-align: center;
+}
+.posts{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: blueviolet;
+    margin:10px;
+    border-radius: 10px;
+}

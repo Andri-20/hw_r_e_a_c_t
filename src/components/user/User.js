@@ -1,10 +1,12 @@
+import '../users/users.css'
 export default function User(props) {
-    let {item: user} = props;
+    let {item: user,posts} = props;
     return (
-        <div>
-            <h2>{user.id} - {user.name}</h2>
-            <h2>{user.username}</h2>
-            <button>Posts</button>
+        <div className="user">
+            <h2>{user.id} - {user.name} - {user.username}</h2>
+            <button onClick={()=>{
+                posts(user)
+            }}>Posts</button>
         </div>
     )
 
