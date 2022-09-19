@@ -1,0 +1,28 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    background: #9a9898;
+    margin: 20px 15px;
+    border-radius: 10px;
+}
+.user_btn{
+  width:200px;
+    background: #61dafb;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.user_btn:hover{
+    opacity: .78;
+}
+.info_user{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    background: #e7c3c3;
+    text-align: center;
+    border-radius: 5px;
+    margin: 30px 0px;
+}
