@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    width: 300px;
+    padding-left: 10px;
+}
+.btn {
+    border-radius: 10px;
+    background: cornflowerblue;
+    width: 100px;
+}
+.btn:active{
+    background: #ac4c74;
+}
