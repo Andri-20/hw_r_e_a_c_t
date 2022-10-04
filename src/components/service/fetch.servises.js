@@ -16,4 +16,8 @@ const getPosts = () => {
     return fetch(baseURL + urls.posts)
         .then(value => value.json())
 }
-export {getTodos,getPosts,getAlbums,getComments}
+const getPost =(id)=>{
+    return fetch(baseURL+urls.posts+'/'+id)
+        .then(value =>value.json())
+}
+export {getTodos,getPosts,getAlbums,getComments,getPost}

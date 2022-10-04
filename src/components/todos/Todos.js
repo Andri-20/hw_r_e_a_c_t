@@ -4,15 +4,17 @@ import {Todo} from "../todo";
 
 const Todos = () => {
 
-  let [todos,setTodos] = useState({});
-   useEffect(()=>{
-       getTodos().then(todos=>{
-           setTodos(todos)
-       })
-   },[])
+    let [todos, setTodos] = useState([]);
+    useEffect(() => {
+        getTodos().then(todos => {
+            setTodos(todos);
+        })
+    }, [])
     return (
         <div>
-            {todos.map((todo=><Todo todo={todo} key={todo.id}/>))}
+            {
+                todos.map(todo => <Todo key={todo.id} todo={todo}/>)
+            }
         </div>
     );
 };
