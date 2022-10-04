@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {getPost} from "../service";
-import {Post} from "../../post/Post";
+import {Post} from "../post/Post";
 
 const Posts = () => {
     let {id} = useParams();
