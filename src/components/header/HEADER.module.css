@@ -1,0 +1,15 @@
+.nav_header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background: #585858;
+    height: 70px;
+    border-bottom: 3px solid #666666;
+}
+.nav_header a{
+    color: #c2b8b8;
+    text-decoration: none;
+    margin-top:20px;
+    font-family: 'Poppins', serif;
+ }
